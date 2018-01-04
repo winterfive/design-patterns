@@ -1,7 +1,7 @@
 
-public class RangedAttack {
+public class RangedAttack implements AttackBehavior{
 	
-	void attack() {
+	public void attack() {
 		System.out.println("Attacking from afar.");
 	}
 

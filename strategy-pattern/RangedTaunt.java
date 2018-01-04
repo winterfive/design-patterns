@@ -1,7 +1,7 @@
 
-public class RangedTaunt {
+public class RangedTaunt implements TauntBehavior {
 	
-	void tuant() {
+	public void taunt() {
 		System.out.println("I'll strike you from a distance!");
 	}
 

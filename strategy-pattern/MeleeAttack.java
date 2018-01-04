@@ -1,7 +1,7 @@
 
-public class MeleeAttack {
+public class MeleeAttack implements AttackBehavior{
 	
-	void attack() {
+	public void attack() {
 		System.out.println("Attacking hand to hand.");
 	}
 

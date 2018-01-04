@@ -1,7 +1,7 @@
 
-public class MeleeTaunt {
+public class MeleeTaunt implements TauntBehavior{
 	
-	void taunt() {
+	public void taunt() {
 		System.out.println("Fight me hand to hand!");
 	}
 
