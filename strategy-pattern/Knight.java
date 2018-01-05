@@ -1,6 +1,8 @@
 
 public class Knight extends Champion{
 	
-	public void commenceAttack() {}
-
+	public Knight() {
+		attackBehavior = new MeleeAttack();
+		tauntBehavior = new MeleeTaunt();
+	}
 }
