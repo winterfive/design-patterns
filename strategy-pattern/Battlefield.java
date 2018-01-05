@@ -4,10 +4,21 @@ public class Battlefield {
 	Champion magicUser = new Mage();
 	Champion meleeFighter = new Knight();
 	
+	public void startBattle() {
+		
+		magicUser.taunt();
+		meleeFighter.taunt();
+		
+		magicUser.attack();
+		meleeFighter.attack();
+	
+		magicUser.retreat("mage");
+		meleeFighter.retreat("knight");
+	}
+	
 	public static void main(String[] args) {
 		
-		magicUser.commenceAttack();
-		meleeFighter.commenceAttack();
+		Battlefield myField = new Battlefield();
+		myField.startBattle();		
 	}
-
 }
