@@ -1,8 +1,8 @@
 
 public class Battlefield {
 	
-	Champion magicUser = new Mage();
-	Champion meleeFighter = new Knight();
+	Mage magicUser = new Mage();
+	Knight meleeFighter = new Knight();
 	
 	public void startBattle() {
 		
@@ -12,8 +12,8 @@ public class Battlefield {
 		magicUser.attack();
 		meleeFighter.attack();
 	
-		magicUser.retreat("mage");
-		meleeFighter.retreat("knight");
+		magicUser.retreat();
+		meleeFighter.retreat();
 	}
 	
 	public static void main(String[] args) {
