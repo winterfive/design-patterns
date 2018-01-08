@@ -1,8 +1,8 @@
 
 public class Battlefield {
 	
-	Mage magicUser = new Mage();
-	Knight meleeFighter = new Knight();
+	Champion magicUser = new Mage();
+	Champion meleeFighter = new Knight();
 	
 	public void startBattle() {
 		
