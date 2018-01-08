@@ -1,3 +1,4 @@
+package strategy;
 
 public class MeleeAttack implements AttackBehavior{
 	

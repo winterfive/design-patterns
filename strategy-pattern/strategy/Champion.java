@@ -1,3 +1,4 @@
+package strategy;
 public abstract class Champion implements AttackBehavior, TauntBehavior {
 	
 	AttackBehavior attackBehavior;

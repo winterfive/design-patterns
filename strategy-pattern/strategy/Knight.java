@@ -1,3 +1,4 @@
+package strategy;
 
 public class Knight extends Champion{
 	
