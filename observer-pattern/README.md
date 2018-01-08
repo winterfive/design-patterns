@@ -5,3 +5,5 @@ When that state changes, the observers(the "many") are notified of that change.
 The subject and it's observers are loosely coupled: they can interact without having deep knowledge of one another.
 The observers can choose to unregister as an observer and later, reregister to be an observer once more... like an
 email newsletter subscriber list.
+
+Design Princeple: Develop loosely coupled designs between objects that interact.
