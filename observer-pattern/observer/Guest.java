@@ -1,8 +1,9 @@
 package observer;
 
-import java.util.Observer;
-
-public class Guest implements Observer{
+public class Guest extends Observer{
 
 	public Guest() {}
+	
+	public void display() {}
+	
 }
