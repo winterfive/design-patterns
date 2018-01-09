@@ -2,12 +2,16 @@ package observer;
 
 import java.util.Observable;
 
-public class SpidermanWaittime extends Observable{
+public class SpidermanRide extends Observable{
 	
-	private int waittime;
+	private int waitMins = 35;	
 	
-	public void setChange() {
-		super.setChanged();
+	public int getWaittime() {
+		return waitMins;
+	}
+
+	public void setWaittime(int waittime) {
+		this.waitMins = waittime;
 	}
 
 }
