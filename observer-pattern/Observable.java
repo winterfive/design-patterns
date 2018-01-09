@@ -1,9 +1,10 @@
 package observer;
 
-import java.util.Observable;
-
-public class HulkWaittime extends Observable{
+public class Observable {
 	
-	private int waittime;
+	void addObserver() {}
+	void deleteObserver() {}
+	void notifyObserver() {}
+	void setChange() {}
 
 }
