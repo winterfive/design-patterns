@@ -13,4 +13,6 @@ public abstract class Champion implements AttackBehavior, TauntBehavior {
 	public void attack() {
 		attackBehavior.attack();		
 	}
+	
+	public void retreat() {}
 }
