@@ -9,7 +9,6 @@ public class Client {
 	
 	public void begin() {
 		RideData rd = new RideData();
-		Guest Sally = new Guest(rd);
 		rd.setWaitTimes(30, 45, 75);
 	}
 

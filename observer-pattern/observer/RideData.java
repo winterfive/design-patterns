@@ -3,9 +3,9 @@ package observer;
 import java.util.Observable;
 
 public class RideData extends Observable{
-	private int hulkWaitTime;
-	private int spidermanWaitTime;
-	private int forbiddenWaitTime;
+	private int hulkWaitTime = 30;
+	private int spidermanWaitTime = 45;
+	private int forbiddenWaitTime = 75;
 	
 	public RideData() {}	
 	
