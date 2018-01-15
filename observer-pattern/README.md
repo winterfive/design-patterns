@@ -5,5 +5,3 @@ When that state changes, the observers (the "many") are notified of that change.
 The subject and its observers are loosely coupled: they can interact without having deep knowledge of one another.
 The observers can choose to unsubscribe as an observer and later, resubscribe to be an observer once more... just like an
 email newsletter subscriber list.
-
-My code will be a small version of a theme park wait time update app.  It will have two subjects (the Hulk Coaster and the Spiderman ride) and three observers (three park visitors).  One observer will be subscibed to both subjects and the other two will be subscribed to one subject each.
