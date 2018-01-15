@@ -1,3 +1,5 @@
+package observer;
+
 import java.util.Observable;
 
 public class RideData extends Observable{
