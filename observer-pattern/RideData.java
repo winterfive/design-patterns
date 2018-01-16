@@ -6,7 +6,6 @@ import java.util.Random;
 public class RideData implements Subject{
 	private ArrayList<Observer> observers;
 	private int waitTime;
-	boolean running = true;
 	
 	public RideData() {
 		observers = new ArrayList<Observer>();
@@ -39,7 +38,8 @@ public class RideData implements Subject{
 	 * that is divisible evenly by 5 
 	 * and returns it as waitTime (ex. 10, 45)
 	 */
-	int getRideTime() {		
+	public int getRideTime() {
+		boolean running = true;
 		while(running) {
 			Random r = new Random();
 			waitTime = r.nextInt(100);
