@@ -31,8 +31,5 @@ public class RideData extends Observable{
 
 	public int getForbiddenWaitTime() {
 		return forbiddenWaitTime;
-	}
-
-	
-	
+	}	
 }
