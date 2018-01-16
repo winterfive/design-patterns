@@ -10,7 +10,16 @@ public class Client {
 	private void begin() {
 		RideData rd = new RideData();
 		Guest myGuest = new Guest(rd);
-		int waitTime = rd.getRideTime();
-		myGuest.display(waitTime);		
+		boolean running = true;
+		
+		myGuest.speak("Hulk Coaster");		
+		while(running) {
+			rd.notifyObserver();
+			try {
+				Thread.sleep(1500);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}		
 	}
 }
