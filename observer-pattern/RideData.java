@@ -35,7 +35,7 @@ public class RideData implements Subject{
 	}
 	
 	/*
-	 * Generates a random number 100 or less
+	 * Generates a random number <= 100
 	 * that is divisible evenly by 5 
 	 * and returns it as waitTime (ex. 10, 45)
 	 */
