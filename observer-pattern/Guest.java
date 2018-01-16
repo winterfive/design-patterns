@@ -1,10 +1,7 @@
 package com.LeeGainer.observer;
 
 public class Guest implements Observer, Display{	
-	private Subject rideData;
-
 	public Guest(Subject rideData) {
-		this.rideData = rideData;
 		rideData.registerObserver(this);
 	}
 
@@ -15,5 +12,9 @@ public class Guest implements Observer, Display{
 	public void display(int waitTime) {
 		System.out.println("The current wait time for the Hulk Coaster is " + waitTime + " minutes.");
 		
-	}	
+	}
+	
+	public void speak(String rideName) {
+		System.out.println("I can't wait to go on the " + rideName + "!");
+	}
 }
