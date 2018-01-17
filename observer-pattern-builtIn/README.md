@@ -7,3 +7,5 @@ to unsubscribe as an observer and later, resubscribe to be an observer once more
 
 This example of the Observer pattern will update a guest at a theme park when the wait time for the 
 Hulk Coaster changes. It uses Java's built-in support(java.util.Observable and java.util.Observer).
+
+![UML for Observer2](https://user-images.githubusercontent.com/22779199/35059152-36b227e6-fb88-11e7-8e6f-fb84006e9078.png)
