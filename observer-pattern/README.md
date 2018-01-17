@@ -8,4 +8,4 @@ email newsletter subscriber list.
 
 This example of the Observer pattern will update a guest at a theme park when the wait time for the Hulk Coaster changes.  It does not use Java's built-in support.
 
-![UML for Observer Pattern] (https://user-images.githubusercontent.com/22779199/35053709-e2a9d28e-fb78-11e7-9952-60451e3ec22f.png)
+![UML for Observer Pattern](https://user-images.githubusercontent.com/22779199/35053709-e2a9d28e-fb78-11e7-9952-60451e3ec22f.png)
