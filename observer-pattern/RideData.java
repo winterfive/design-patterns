@@ -37,18 +37,22 @@ public class RideData implements Subject{
 	 * Generates a random number <= 100
 	 * that is divisible evenly by 5 
 	 * and returns it as waitTime (ex. 10, 45)
+	 * void -> int
 	 */
 	public int getRideTime() {
 		boolean running = true;
+		int newTime = 0;
+		int oldTime = waitTime;
 		while(running) {
 			Random r = new Random();
-			waitTime = r.nextInt(100);
-			if(waitTime % 5 != 0) {
+			newTime = r.nextInt(100);
+			// System.out.println("OldTime: " + oldTime + ", newTime: " + newTime);
+			if(newTime % 5 != 0 & newTime != oldTime) {
 				continue;
 			} else {
 				running = false;
 			}			
 		}
-		return waitTime;		
+		return newTime;		
 	}
 }
