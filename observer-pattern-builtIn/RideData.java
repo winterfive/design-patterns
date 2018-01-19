@@ -4,7 +4,7 @@ import java.util.Observable;
 import java.util.Random;
 
 public class RideData extends Observable{
-	private int waitTime;
+	private int waitTime = 10;
 	
 	public RideData() {}
 	
@@ -26,10 +26,11 @@ public class RideData extends Observable{
 		while(running) {
 			Random r = new Random();
 			newTime = r.nextInt(100);
-			// System.out.println("OldTime: " + oldTime + ", newTime: " + newTime);
-			if(newTime % 5 != 0 && newTime != oldTime) {
+			System.out.println("OldTime: " + oldTime + ", newTime: " + newTime);
+			if(newTime % 5 != 0 || newTime == oldTime) {
 				continue;
 			} else {
+				waitTime = newTime;
 				running = false;
 			}			
 		}
