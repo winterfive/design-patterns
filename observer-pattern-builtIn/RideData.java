@@ -14,9 +14,9 @@ public class RideData extends Observable{
 	}
 	
 	/*
-	 * Generates a random number <= 100
+	 * Generates a random number <= 125
 	 * that is divisible evenly by 5 
-	 * and returns it as waitTime (ex. 10, 45)
+	 * and returns it as waitTime (ex. 0, 55, 125)
 	 * void -> int
 	 */
 	public int getRideTime() {
@@ -25,9 +25,9 @@ public class RideData extends Observable{
 		int oldTime = waitTime;
 		while(running) {
 			Random r = new Random();
-			newTime = r.nextInt(100);
-			System.out.println("OldTime: " + oldTime + ", newTime: " + newTime);
-			if(newTime % 5 != 0 || newTime == oldTime) {
+			newTime = r.nextInt(26) * 5;
+			// System.out.println("OldTime: " + oldTime + ", newTime: " + newTime);
+			if(newTime == oldTime) {
 				continue;
 			} else {
 				waitTime = newTime;
