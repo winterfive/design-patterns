@@ -9,4 +9,6 @@ I am creating these files to study the various design patterns and to use them a
 
 <b>Design Principle:</b> Program to an interface, not an implementation.
 
-<b>Design Principle:</b> Favor composition over inheritance.
+<b>Design Principle:</b> Favor composition over inheritance.  
+
+<b>Design Principle:</b> Classes should be open to extension and closed to modification.
