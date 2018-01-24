@@ -1,1 +1,0 @@
-public abstrct class Beverage {}
