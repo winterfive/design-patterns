@@ -1,19 +1,27 @@
 package source;
 
-public class Mocha extends condimentDecorator{
-	Beverage beverage;
+public class Mocha extends CondimentDecorator{
 	
 	public Mocha(Beverage beverage) {
 		this.beverage = beverage;
 	}
 
-	public String getDesc() {
-		return beverage.getDesc() + " Mocha";
+	public String getDescription() {
+		return beverage.getDescription() + ", Mocha";
 	}
 	
 	public double cost() {
-		return beverage.cost() + .20;
+		double cost = beverage.cost();
+		Size size = beverage.getSize();
+		if(size == Size.TALL) {
+			cost += .20;
+		} 
+		if(size == Size.GRANDE) {
+			cost += .30;
+		}
+		if(size == Size.VENTI) {
+			cost += .45;
+		}
+		return cost;
 	}
-	
-
 }

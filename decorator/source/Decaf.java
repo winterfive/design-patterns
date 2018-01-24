@@ -1,14 +1,12 @@
 package source;
 
-public class Decaf extends Beverage{
+public class Decaf extends Beverage {
 	
 	public Decaf() {
-		desc = "Decaf";
+		desc = "Decaf Coffee";
 	}
-
+ 
 	public double cost() {
-		return .89;
+		return 1.00;
 	}
-	
-
 }

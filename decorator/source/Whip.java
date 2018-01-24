@@ -1,18 +1,28 @@
 package source;
 
-public class Whip extends condimentDecorator{
-	Beverage beverage;
+public class Whip extends CondimentDecorator{
 	
 	public Whip(Beverage beverage) {
 		this.beverage = beverage;		
 	}
 	
-	public String getDesc() {
-		return beverage.getDesc() + " Whip";
+	public String getDescription() {
+		return beverage.getDescription() + ", Whip";
 	}
 	
 	public double cost() {
-		return beverage.cost() + .20;
+		double cost = beverage.cost();
+		Size size = beverage.getSize();
+		if(size == Size.TALL) {
+			cost += .30;
+		} 
+		if(size == Size.GRANDE) {
+			cost += .40;
+		}
+		if(size == Size.VENTI) {
+			cost += .50;
+		}
+		return cost;
 	}
 
 }

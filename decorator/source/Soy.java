@@ -1,18 +1,28 @@
 package source;
 
-public class Soy extends condimentDecorator{
-	Beverage beverage;
+public class Soy extends CondimentDecorator{
 	
 	public Soy(Beverage beverage) {
 		this.beverage = beverage;		
 	}
 	
-	public String getDesc() {
-		return beverage.getDesc() + " Soy";
+	public String getDescription() {
+		return beverage.getDescription() + ", Soy";
 	}
 	
 	public double cost() {
-		return beverage.cost() + .15;
+		double cost = beverage.cost();
+		Size size = beverage.getSize();
+		if(size == Size.TALL) {
+			cost += .30;
+		} 
+		if(size == Size.GRANDE) {
+			cost += .45;
+		}
+		if(size == Size.VENTI) {
+			cost += .60;
+		}
+		return cost;
 	}
 
 }
