@@ -16,6 +16,8 @@ public class SwingObserverExample {
 
 		JButton button = new JButton("Click me.");
 		JButton button2 = new JButton("Click me instead.");
+//		button.addActionListener(new AngelListener());
+//		button.addActionListener(new DevilListener());
 		
 		button.addActionListener(event -> 
 			System.out.println("You made the right choice!")
@@ -29,7 +31,6 @@ public class SwingObserverExample {
 
 		// Set frame properties 
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		//frame.getContentPane().add(BorderLayout.CENTER, button);
 		frame.setSize(300,300);
 		frame.setVisible(true);
 	}

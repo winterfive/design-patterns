@@ -1,7 +1,7 @@
 
 public class CHPizzaStore {
 	
-	// A PizzaStore franchise
+	// A PizzaStore franchise in Chicago
 	
 	public Pizza createPizza(type) {
 		

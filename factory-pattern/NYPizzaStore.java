@@ -1,7 +1,7 @@
 
 public class NYPizzaStore extends PizzaStore {
 	
-	// A PizzaStore franchise
+	// A PizzaStore franchise in NYC
 	
 	public Pizza createPizza(String item) {
 		
