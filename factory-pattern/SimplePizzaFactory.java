@@ -1,7 +1,7 @@
 
 public class SimplePizzaFactory {
 	
-	public Pizza createPizza(String type) {
+	public void createPizza(String type) {
 		Pizza pizza = null;
 	}
 

@@ -1,12 +1,12 @@
 
 public class Downtown {
 	
-	PizzaStore nyPizza = new PizzaStore();
-	PizzaStore chPizza = new PizzaStore();
+	PizzaStore nyPizza = new NYPizzaStore();
+	PizzaStore chPizza = new CHPizzaStore();
 	
 	public static void main(String[] args) {
 		
-		Downtown myDOwntown = new Downtown();
+		Downtown myDowntown = new Downtown();
 		myDowntown.eatPizza();
 	}
 	

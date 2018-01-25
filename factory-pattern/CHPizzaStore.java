@@ -1,9 +1,9 @@
 
-public class CHPizzaStore {
+public class CHPizzaStore extends PizzaStore{
 	
 	// A PizzaStore franchise in Chicago
 	
-	public Pizza createPizza(type) {
+	public Pizza createPizza(String item) {
 		
 		if(item.equals("cheese")) {
 			return new CHCheesePizza();
