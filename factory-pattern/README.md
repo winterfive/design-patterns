@@ -1,4 +1,4 @@
-Factory Pattern
+## Factory Pattern
 
 The factory pattern encapsulates object creation.  An abstract creator class (the parent class) defines abstract factory methods that the subclasses use to create their own custom implementations of objects. 
 
