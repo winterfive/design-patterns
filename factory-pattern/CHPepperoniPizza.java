@@ -15,7 +15,7 @@ public class CHPepperoniPizza extends Pizza {
 	}
 	
 	void cut() {
-		System.out.println("Cutting the pizza into sqaure slices.");
+		System.out.println("Cutting the pizza into square slices.");
 	}
 
 }
