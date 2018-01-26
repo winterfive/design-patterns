@@ -1,19 +1,29 @@
+import java.util.ArrayList;
 
 public abstract class Pizza {
+	String name;
+	String dough;
+	String sauce;
+	ArrayList<String> toppings = new ArrayList<String>();
 	
-	// All concrete subclasses will implement this abstract class
-	
-	public void prepare() {
+	void prepare() {
 		System.out.println("Preparing the pizza.");
 	}
-	public void bake() {
+	
+	void bake() {
 		System.out.println("Baking the pizza.");
 	}
-	public void cut() {
+	
+	void cut() {
 		System.out.println("Cutting the pizza into slices.");
 	}
-	public void box() {
+	
+	void box() {
 		System.out.println("Placing the pizza in a box.");
+	}
+	
+	public String getName() {
+		return name;
 	}
 	
 
