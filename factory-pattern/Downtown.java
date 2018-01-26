@@ -1,9 +1,6 @@
 
 public class Downtown {
 	
-	PizzaStore nyPizza = new NYPizzaStore();
-	PizzaStore chPizza = new CHPizzaStore();
-	
 	public static void main(String[] args) {
 		
 		Downtown myDowntown = new Downtown();
@@ -11,9 +8,33 @@ public class Downtown {
 	}
 	
 	public void eatPizza() {
-		nyPizza.orderPizza("cheese");
-		chPizza.orderPizza("veggie");
-	}
-	
+		
+		// Create two pizza stores
+		PizzaStore nyStore = new NYPizzaStore();
+		PizzaStore chicagoStore = new CHPizzaStore();
+ 
+		Pizza pizza = nyStore.orderPizza("cheese");
+		System.out.println("Ethan ordered a " + pizza.getName() + "\n");
+ 
+		pizza = chicagoStore.orderPizza("cheese");
+		System.out.println("Joel ordered a " + pizza.getName() + "\n");
 
+		pizza = nyStore.orderPizza("clam");
+		System.out.println("Ethan ordered a " + pizza.getName() + "\n");
+ 
+		pizza = chicagoStore.orderPizza("clam");
+		System.out.println("Joel ordered a " + pizza.getName() + "\n");
+
+		pizza = nyStore.orderPizza("pepperoni");
+		System.out.println("Ethan ordered a " + pizza.getName() + "\n");
+ 
+		pizza = chicagoStore.orderPizza("pepperoni");
+		System.out.println("Joel ordered a " + pizza.getName() + "\n");
+
+		pizza = nyStore.orderPizza("veggie");
+		System.out.println("Ethan ordered a " + pizza.getName() + "\n");
+ 
+		pizza = chicagoStore.orderPizza("veggie");
+		System.out.println("Joel ordered a " + pizza.getName() + "\n");
+	}
 }

@@ -7,7 +7,13 @@ public abstract class Pizza {
 	ArrayList<String> toppings = new ArrayList<String>();
 	
 	void prepare() {
-		System.out.println("Preparing the pizza.");
+		System.out.println("Prepare " + name);
+		System.out.println("Tossing dough...");
+		System.out.println("Adding sauce...");
+		System.out.println("Adding toppings: ");
+		for (String topping : toppings) {
+			System.out.println("   " + topping);
+}
 	}
 	
 	void bake() {
@@ -25,6 +31,17 @@ public abstract class Pizza {
 	public String getName() {
 		return name;
 	}
+	
+	public String toString() {
+		StringBuffer display = new StringBuffer();
+		display.append("---- " + name + " ----\n");
+		display.append(dough + "\n");
+		display.append(sauce + "\n");
+		for (String topping : toppings) {
+			display.append(topping + "\n");
+		}
+		return display.toString();
+}
 	
 
 }
