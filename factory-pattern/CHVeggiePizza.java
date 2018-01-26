@@ -15,4 +15,8 @@ public class CHVeggiePizza extends Pizza {
 	void cut() {
 		System.out.println("Cutting the pizza into square slices");
 	}
+	
+	void box() {
+		System.out.println("Placing the pizza into a sqaure box.");
+	}
 }
