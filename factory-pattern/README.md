@@ -15,7 +15,7 @@ The concrete product classes are the only classes that have the knowledge to cre
 
 ## Tips
 
-No variable should hold a reference to aconcrete class (ie. yu can't use new, use a factory instead).
+No variable should hold a reference to a concrete class (ie. you can't use "new", use a factory instead).
 
 No class should derive from a concrete class.  Derive from an abstract class instead.  
 
