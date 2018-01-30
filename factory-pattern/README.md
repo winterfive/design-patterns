@@ -9,7 +9,7 @@ A real life example would be the franchising of a pizza shop.  All of the pizza 
 ![Factory UML](https://user-images.githubusercontent.com/22779199/35464505-3200ed70-02c4-11e8-8b4c-fd18e7e54f97.png)
 
 All of the pizza shops (the parent class and child classes) are the Creator classes.
-All of the pizzas (the generic pizza method and the customized methods in the child pizza shops) are the Product classes.
+All of the pizzas (the abstract pizza and the child concrete pizzas) are the Product classes.
 
 The concrete product classes are the only classes that have the knowledge to create concrete products (objects).
 
