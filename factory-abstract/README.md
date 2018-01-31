@@ -1,3 +1,14 @@
 ## Abstract Factory
 
-The abstract factory pattern uses an abstract interface to create a set of related products with knowledge about the concrete products that are actually created.  
+The abstract factory pattern uses interfaces (object composition) to create groups of related or dependent objects without specifying their concrete classes.  For example, the CheesePizza and VeggiePizza classes will implement the Pizza interface because they are types of pizza.  The interface doesn't care what kind of pizza is made or have any knowledge of how it's made.  The abstract client (Pizza) is decoupled from the concrete classes (all the different types of pizza).  The concrete classes in the abstract pattern often use a factory method to create products.
+
+## Tip
+
+- Use the Abstract Factory when you want to create families of products and you want them to be created together.
+
+- Changes to the Abstract Factory will require changes to the interface (breaking the OPEN CLOSED PRINCIPLE).
+
+
+  
+
+
