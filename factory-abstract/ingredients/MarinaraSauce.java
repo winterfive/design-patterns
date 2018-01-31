@@ -1,5 +1,8 @@
 package ingredients;
 
-public class MarinaraSauce extends Sauce {
+public class MarinaraSauce implements Sauce {
+	public String toString() {
+		System.out.println("Marinara Sauce");
+	}
 
 }
