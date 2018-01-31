@@ -1,5 +1,6 @@
 package ingredients;
 
-public class Cheese {
+public interface Cheese {
+	public String toString();
 
 }

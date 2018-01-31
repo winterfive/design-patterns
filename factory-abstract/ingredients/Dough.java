@@ -1,5 +1,5 @@
 package ingredients;
 
-public class Dough {
-
+public interface Dough {
+	public String toString();
 }

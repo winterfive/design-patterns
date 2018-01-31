@@ -1,5 +1,6 @@
 package ingredients;
 
-public class Pepperoni {
+public interface Pepperoni {
+	public String toString();
 
 }
