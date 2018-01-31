@@ -11,6 +11,6 @@ I am creating these files to study the various design patterns and to use them a
 
 <b>Design Principle:</b> Favor composition over inheritance.  
 
-<b>Design Principle:</b> Classes should be open to extension and closed to modification.
+<b>Design Principle:</b> OPEN/CLOSED PRINCEPLE - Classes should be open to extension and closed to modification.
 
 <b>Design Principle:</b> DEPENDANCY INVERSION PRINCIPLE - Depend on abstractions, not concrete classes.
