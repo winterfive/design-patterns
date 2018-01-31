@@ -1,5 +1,8 @@
 package ingredients;
 
-public class ThinCrustDough extends Dough {
+public class ThinCrustDough implements Dough {
+	public String toString() {
+		System.out.println("Thin Style Crispy Crust");
+	}
 
 }

@@ -1,5 +1,8 @@
 package ingredients;
 
-public class SlicedPepperoni extends Pepperoni {
+public class SlicedPepperoni implements Pepperoni {
+	public String toString() {
+		System.out.println("Sliced Pepperoni");
+	}
 
 }
