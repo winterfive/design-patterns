@@ -10,7 +10,8 @@ We have a couple options to make absolutely sure there's only one instance of ou
 Each has it's drawbacks:
 - Synchronization of the getInstance method (expensive).
 - Change the instantiation from lazy(in the getInstance()) to eagerly created (instantiated in the static variable).  If your singleton is big or never used, then you are wasting resources.
-- Use double-checked locking w/ synchronization along with adding the volitile keyword to the static variable.  This doesn't work for versions of Java earlier then 5.  
+- Use double-checked locking w/ synchronization along with adding the volitile keyword to the static variable.  This doesn't work for Java 2, version 5 or earlier versions.
+- If you are using JVM 1.1 or earlier, you need to create a registry of Singletons to avoid garbage collection.
 
 Tip: If you have lots of singletons in your design, you are doing it wrong.
 
