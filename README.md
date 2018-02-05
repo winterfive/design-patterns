@@ -1,5 +1,4 @@
 # design-patterns
-...in Java.
 
 I am creating these files to study the various design patterns and to use them as a resource in the future.
 
