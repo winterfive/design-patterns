@@ -12,3 +12,5 @@ Each has it's drawbacks:
 - Change the instantiation from lazy(in the getInstance()) to eagerly created (instantiated in the static variable).  If your singleton is big or never used, then you are wasting resources.
 - Use double-checked locking w/ synchronization along with adding the volitile keyword to the static variable.  This doesn't work for versions of Java earlier then 5.  
 
+Tip: If you have lots of singletons in your design, you are doing it wrong.
+
