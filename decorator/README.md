@@ -11,6 +11,6 @@ This allows for expansion of code without requiring several new classes to be cr
 
 Decorators are the same type of the components they decorate.  
 
-You can wrap a concrete coponent with many decorators.  
+You can wrap a concrete component with many decorators.  
 
 
