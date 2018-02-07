@@ -1,3 +1,6 @@
+package client;
+import commands.Command;
+
 /*
  * A single button remote control
  * that has a method (setCommand()) that
