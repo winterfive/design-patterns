@@ -13,4 +13,5 @@ I am creating these files to study the various design patterns and to use them a
 <b>Design Principle:</b> OPEN/CLOSED PRINCEPLE - Classes should be open to extension and closed to modification.
 
 <b>Design Principle:</b> DEPENDANCY INVERSION PRINCIPLE - Depend on abstractions, not concrete classes.
+
 ![Would you solder a lamp directly into an outlet?](https://user-images.githubusercontent.com/22779199/35826534-02835978-0a87-11e8-9952-bc8889a5d4af.jpeg)
