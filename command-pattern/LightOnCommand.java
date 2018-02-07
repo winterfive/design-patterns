@@ -1,5 +1,3 @@
-import com.sun.scenario.effect.light.Light;
-
 public class LightOnCommand implements Command {
 	
 	Light light;
@@ -11,6 +9,5 @@ public class LightOnCommand implements Command {
 	public void execute() {
 		light.on();
 	}
-	
 
 }
