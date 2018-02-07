@@ -59,3 +59,5 @@ execute() should be for itself.
         slot.execute();
       }
     }
+ 
+ ![Command Pattern UML](https://user-images.githubusercontent.com/22779199/35943156-29932e62-0c26-11e8-9212-1a92357d066c.png)
