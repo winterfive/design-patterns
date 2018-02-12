@@ -2,6 +2,7 @@ package client;
 
 import commands.*;
 import controllables.*;
+import controllables.GarageLight;
 
 public class RemoteControlTest {
 
