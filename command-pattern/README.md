@@ -1,7 +1,7 @@
 ## Command Pattern  
 
 This pattern encapsulates a request as an object.  The request (such as "Close the garage door"), the invoker
-(a garage remote control), and the item the request acts on (the garage door) are all seperate objects.
+(a garage remote control), and the item the request acts on (the garage door) are all separate objects.
 The invoker contains a method to act on any request (setCommand()).  This method is parameterized: it can accept any 
 request as an object (closeGarageDoor).  It sets or loads the invoker with a task.  Once loaded up, the request can be 
 completed by calling the invoker's method (such as ButtonWasPressed()) to call the execute method (shared with all 
