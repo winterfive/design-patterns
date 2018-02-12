@@ -1,13 +1,14 @@
 ## Command Pattern  
 
-This pattern encapsulates a request as an object.  The request (such as "Close the garage door"), the invoker
+This pattern encapsulates a request as an object.  The request (such as close()), the invoker
 (a garage remote control), and the item the request acts on (the garage door) are all separate objects.
 The invoker contains a method to act on any request (setCommand()).  This method is parameterized: it can accept any 
 request as an object (closeGarageDoor).  It sets or loads the invoker with a task.  Once loaded up, the request can be 
-completed by calling the invoker's method (such as ButtonWasPressed()) to call the execute method (shared with all 
-commmand objects through the command interface) on whatever item the request acts on.  Each command will define what
-execute() should be for itself.  
+completed by calling the invoker's method (such as ButtonWasPressed(), engage(), etc) to call the execute method (shared with all 
+command objects through the command interface) on whatever item the request acts on.  Each command will define what
+execute() should be for itself.
 
+For this example, I have three types of classes: my clients classes, my command classes, and my controllable classes.
 
 ### This command class turns off a light.
 
@@ -24,7 +25,7 @@ execute() should be for itself.
       }	
     }
 
-### The light will define how it's turned off
+### The light (a controllable) will define how it's turned off
 
     public class Light {
 
@@ -37,7 +38,7 @@ execute() should be for itself.
       }
     }
    
-### The remote loads the request
+### The remote (client) loads the request
 
     public class SimpleRemoteControl {
       Command slot;
