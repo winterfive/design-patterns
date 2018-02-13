@@ -35,11 +35,10 @@ public class RemoteControl {
 		sb.append("\n----- Remote Control -----\n");
 		int size = onCommands.length;
 		for(int i = 0; i < size; i++) {
-			sb.append("[slot " + i + "] " + onCommands[i].getClass().getName())
+			sb.append("[slot " + i + "] " + onCommands[i].getClass().getName()
 			+ "    " + offCommands[i].getClass().getName() + "\n");
 			
 		}
+		return sb.toString();
 	}
-	
-
 }
