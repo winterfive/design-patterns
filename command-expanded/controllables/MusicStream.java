@@ -8,7 +8,7 @@ public class MusicStream {
 	}
 
 	public void adjustVolume() {
-		System.out.println("The music is too good. Turn it up!");
+		System.out.println("The music is really good. Turn it up!");
 		
 	}
 
