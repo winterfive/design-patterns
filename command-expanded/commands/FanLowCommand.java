@@ -12,7 +12,7 @@ public class FanLowCommand implements Command{
 
 	public void execute() {
 		prevSpeed = cf.getSpeed();
-		cf.high();		
+		cf.low();		
 	}
 
 	public void undo() {
