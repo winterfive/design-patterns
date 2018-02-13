@@ -14,4 +14,10 @@ public class GarageDoorCloseCommand implements Command {
 		
 	}
 
+	@Override
+	public void undo() {
+		// TODO Auto-generated method stub
+		
+	}
+
 }

@@ -14,4 +14,10 @@ public class GarageLightOffCommand implements Command{
 		gl.garageLightOff();		
 	}
 
+	@Override
+	public void undo() {
+		// TODO Auto-generated method stub
+		
+	}
+
 }

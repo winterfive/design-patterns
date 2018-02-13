@@ -12,4 +12,10 @@ public class GarageLightOnCommand implements Command{
 	public void execute() {
 		gl.garageLightOn();		
 	}
+
+	@Override
+	public void undo() {
+		// TODO Auto-generated method stub
+		
+	}
 }
