@@ -9,30 +9,43 @@ public class RemoteControlTest {
 		
 		RemoteControl remote = new RemoteControl();
 		
-		Light livingRoomLight = new Light("living room");
-		Light kitchenLight = new Light("kitchen");		
+		Light livingRoomLight = new Light("living room");	
 		LightOnCommand livingRoomLightOn = new LightOnCommand(livingRoomLight);
-		LightOffCommand livingRoomLightOff = new LightOffCommand(livingRoomLight);		
+		LightOffCommand livingRoomLightOff = new LightOffCommand(livingRoomLight);
+		
+		Light kitchenLight = new Light("kitchen");	
 		LightOnCommand kitchenLightOn = new LightOnCommand(kitchenLight);
 		LightOffCommand kitchenLightOff = new LightOffCommand(kitchenLight);
 		
-		GarageDoor gDoor = new GarageDoor();
-		Light gLight = new Light("garage");
+		GarageDoor gDoor = new GarageDoor();		
 		GarageDoorOpenCommand garageOpen = new GarageDoorOpenCommand(gDoor);
 		GarageDoorCloseCommand garageClose = new GarageDoorCloseCommand(gDoor);
+		
+		Light gLight = new Light("garage");
 		LightOnCommand garageLightOn = new LightOnCommand(gLight);
 		LightOffCommand garageLightOff = new LightOffCommand(gLight);
 		
-		MusicStream ms = new MusicStream();
-		MusicStreamOnCommand mson = new MusicStreamOnCommand(ms);
-		MusicStreamOffCommand msoff = new MusicStreamOffCommand(ms);
+		MusicStream music = new MusicStream();
+		MusicStreamOnCommand musicOn = new MusicStreamOnCommand(music);
+		MusicStreamOffCommand musicOff = new MusicStreamOffCommand(music);
+		
+		CeilingFan bedroomFan = new CeilingFan("master bedroom", 0);		
+		FanMediumCommand bedroomFanMed = new FanMediumCommand(bedroomFan);
+		FanHighCommand bedroomFanHigh = new FanHighCommand(bedroomFan);
+		FanOffCommand bedroomFanOff = new FanOffCommand(bedroomFan);
+		
+		CeilingFan kFan = new CeilingFan("kitchen", 0);
+		FanLowCommand kitchenFanLow = new FanLowCommand(kFan);
+		FanOffCommand kitchenFanOff = new FanOffCommand(kFan);
 		
 		remote.setCommand(0, livingRoomLightOn, livingRoomLightOff);
 		remote.setCommand(1, kitchenLightOn, kitchenLightOff);
 		remote.setCommand(2, garageOpen, garageClose);
 		remote.setCommand(3, garageLightOn, garageLightOff);
-		remote.setCommand(4, mson, msoff);
-		// Slots 5, 6, 7 have noCommand via RemoteControl() constructor
+		remote.setCommand(4, bedroomFanMed, bedroomFanOff);
+		remote.setCommand(5, bedroomFanHigh, bedroomFanOff);
+		remote.setCommand(6, kitchenFanLow, kitchenFanOff);
+		// Remaining slots have noCommand via RemoteControl() constructor
 		
 		System.out.println(remote);
 		
@@ -47,5 +60,11 @@ public class RemoteControlTest {
 		remote.offButtonWasPushed(3);
 		remote.onButtonWasPushed(4);
 		remote.offButtonWasPushed(4);
+		remote.onButtonWasPushed(5);
+		remote.offButtonWasPushed(5);
+		remote.undoButtonWasPushed();	// Turns master bedroom fan back on at high speed
+		remote.onButtonWasPushed(6);
+		remote.offButtonWasPushed(6);
+		remote.undoButtonWasPushed();	// Turns kitchen fan back on at low speed
 	}
 }
