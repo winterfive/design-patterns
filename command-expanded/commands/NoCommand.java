@@ -8,4 +8,8 @@ public class NoCommand implements Command {
 
 	}
 
+	public void undo() {	}
+	
+	
+
 }
