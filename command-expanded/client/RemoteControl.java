@@ -12,6 +12,7 @@ public class RemoteControl {
 		
 		Command noCommand = new NoCommand();
 		for(int i = 0; i < 7; i++) {
+			// by default each slot on the remote will have noCommand
 			onCommands[i] = noCommand;
 			offCommands[i] = noCommand;
 		}

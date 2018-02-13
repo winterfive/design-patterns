@@ -33,6 +33,7 @@ public class RemoteControlTest {
 		remote.setCommand(2, garageOpen, garageClose);
 		remote.setCommand(3, garageLightOn, garageLightOff);
 		remote.setCommand(4, mson, msoff);
+		// Slots 5, 6, 7 have noCommand via RemoteControl() constructor
 		
 		System.out.println(remote);
 		
@@ -47,5 +48,4 @@ public class RemoteControlTest {
 		remote.onButtonWasPushed(4);
 		remote.offButtonWasPushed(4);
 	}
-
 }
