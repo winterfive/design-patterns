@@ -1,5 +1,5 @@
 package commands;
-import controllables.GarageLight;
+import controllables.*;
 
 public class GarageLightOnCommand implements Command{
 	
