@@ -8,11 +8,12 @@ public class RemoteControl {
 	Command undoCommand;
 	
 	public RemoteControl() {
-		onCommands = new Command[7];
-		offCommands = new Command[7];
+		// Magic numbers... 
+		onCommands = new Command[9];
+		offCommands = new Command[9];
 		
 		Command noCommand = new NoCommand();
-		for(int i = 0; i < 7; i++) {
+		for(int i = 0; i < 9; i++) {
 			// by default each slot on the remote will have noCommand
 			onCommands[i] = noCommand;
 			offCommands[i] = noCommand;
