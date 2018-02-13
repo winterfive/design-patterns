@@ -1,7 +1,11 @@
-## Command Pattern  
+## Command Pattern (Expanded)
 
-This pattern encapsulates a request as an object.  The request (such as close()), the invoker
-(a remote control), and the item the request acts on (a garage door) are all separate objects.
-The invoker contains a method to act on any request (setCommand()).  This method is parameterized: it can accept any 
-request as an object (closeGarageDoor).  It sets or loads the invoker with a task.  Once loaded up, the request can be completed by calling the invoker's method (such as OnButtonWasPressed()) to call the execute method (shared with all command objects through the command interface) on whatever item the request acts on.  Each command will define what execute() should be for itself.
+In this pattern, the client(RemoteControlTest) can use a remote control class to call a generic on() or off() that calls an execute() on several different decoupled objects(doors, lights, etc).  The Command interface is implemented by all Command classes, requiring the execute().  Each Command holds a reference to the instance of the appropriate vendor class.  
+
+
+The Remote classes(Client, RemoteControl) are decoupled from the vendor classes(Light, GarageDoor, etc).  This pattern follows the OPEN CLOSED PRINCIPLE. 
+
+
+
+
 
