@@ -45,6 +45,7 @@ public class RemoteControlTest {
 		remote.setCommand(4, bedroomFanMed, bedroomFanOff);
 		remote.setCommand(5, bedroomFanHigh, bedroomFanOff);
 		remote.setCommand(6, kitchenFanLow, kitchenFanOff);
+		remote.setCommand(7, musicOn, musicOff);
 		// Remaining slots have noCommand via RemoteControl() constructor
 		
 		System.out.println(remote);
@@ -66,5 +67,6 @@ public class RemoteControlTest {
 		remote.onButtonWasPushed(6);
 		remote.offButtonWasPushed(6);
 		remote.undoButtonWasPushed();	// Turns kitchen fan back on at low speed
+		remote.onButtonWasPushed(7);
 	}
 }
