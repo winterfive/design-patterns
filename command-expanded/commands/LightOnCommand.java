@@ -9,12 +9,12 @@ public class LightOnCommand implements Command {
 		this.light = light;
 	}
 	
-	public LightOnCommand(String string) {
-		// TODO Auto-generated constructor stub
-	}
-
 	public void execute() {
 		light.on();
+	}
+	
+	public void undo() {
+		light.off();
 	}
 
 }
