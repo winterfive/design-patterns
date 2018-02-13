@@ -15,9 +15,6 @@ public class MusicStreamOnCommand implements Command{
 		
 	}
 	
-	public void undo() {
-		// TODO Auto-generated method stub
-		
-	}
+	public void undo() {	}
 
 }
