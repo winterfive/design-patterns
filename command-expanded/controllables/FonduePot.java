@@ -10,5 +10,9 @@ public class FonduePot {
 	public void on() {
 		System.out.println("The fondue pot is on and filled with deliscious melted " + cheese + ".");
 	}
+	
+	public void off() {
+		System.out.println("The fondue pot is off.");
+	}
 
 }
