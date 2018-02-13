@@ -1,14 +1,20 @@
 package controllables;
 
 public class Light {
+	String location;
 
-	public void on(String light) {
-		System.out.println("The " +  light + " is on.");		
+	public Light(String location) {
+		this.location = location;
+	}
+
+
+	public void on() {
+		System.out.println("The " +  location + " light is on.");		
 	}
 	
 	
-	public void off(String light) {
-		System.out.println("The " +  light + " is off.");
+	public void off() {
+		System.out.println("The " +  location + " light is off.");
 	}
 
 }
