@@ -9,30 +9,30 @@ public class RemoteControlTest {
 	public static void main(String[] args) {
 		
 		RemoteControl remote = new RemoteControl();
-		Light light = new Light();
-		LightOnCommand lightOn = new LightOnCommand(light);
-		LightOffCommand lightOff = new LightOffCommand(light);
+		
+		Light livingRoomLight = new Light();
+		Light kitchenLight = new Light();		
+		LightOnCommand livingRoomLightOn = new LightOnCommand(livingRoomLight);
+		LightOffCommand livingRoomLightOff = new LightOffCommand(livingRoomLight);		
+		LightOnCommand kitchenLightOn = new LightOnCommand(kitchenLight);
+		LightOffCommand kitchenLightOff = new LightOffCommand(kitchenLight);
 		
 		GarageDoor gDoor = new GarageDoor();
 		GarageLight gLight = new GarageLight();
 		GarageDoorOpenCommand garageOpen = new GarageDoorOpenCommand(gDoor);
 		GarageDoorCloseCommand garageClose = new GarageDoorCloseCommand(gDoor);
 		GarageLightOnCommand garageLightOn = new GarageLightOnCommand(gLight);
+		GarageLightOnCommand garageLightOff = new GarageLightOnCommand(gLight);
 		
-		remote.setCommand(lightOn);
-		remote.buttonWasPressed();
+		MusicStream ms = new MusicStream();
+		MusicStreamOnCommand mson = new MusicStreamOnCommand(ms);
+		MusicStreamOffCommand msoff = new MusicStreamOffCommand(ms);
 		
-		remote.setCommand(lightOff);
-		remote.buttonWasPressed();
-		
-		remote.setCommand(garageClose);
-		remote.buttonWasPressed();
-		
-		remote.setCommand(garageOpen);
-		remote.buttonWasPressed();
-		
-		remote.setCommand(garageLightOn);
-		remote.buttonWasPressed();
+		remote.setCommand(0, livingRoomLightOn, livingRoomLightOff);
+		remote.setCommand(1, kitchenLightOn, kitchenLightOff);
+		remote.setCommand(2, garageOpen, garageClose);
+		remote.setCommand(3, garageLightOn, garageLightOff);
+		remote.setCommand(4, mson, msoff);
 	}
 
 }
