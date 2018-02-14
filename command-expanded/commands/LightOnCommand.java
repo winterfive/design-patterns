@@ -1,8 +1,7 @@
 package commands;
 import controllables.Light;
 
-public class LightOnCommand implements Command {
-	
+public class LightOnCommand implements Command {	
 	Light light;
 	
 	public LightOnCommand(Light light) {
@@ -16,5 +15,4 @@ public class LightOnCommand implements Command {
 	public void undo() {
 		light.off();
 	}
-
 }
