@@ -38,6 +38,23 @@ public class RemoteControlTest {
 		FanLowCommand kitchenFanLow = new FanLowCommand(kFan);
 		FanOffCommand kitchenFanOff = new FanOffCommand(kFan);
 		
+		// Macro for Party Mode
+		
+		Light strobeLight = new Light("party room");
+		MusicStream partyMusic = new MusicStream();
+		HotTub myHotTub = new HotTub();
+		FonduePot myFondue = new FonduePot("Gruyere, Cheddar, and Emmentaler");
+		
+		LightOnCommand strobeLightOn = new LightOnCommand(strobeLight);
+		MusicStreamOnCommand partyMusicStreamOn = new MusicStreamOnCommand(partyMusic);
+		HotTubOnCommand hotTubOn = new HotTubOnCommand();
+		FonduePotOnCommand fonduePotOn = new FonduePotOnCommand();
+		LightOffCommand strobeLightOff = new LightOffCommand(strobeLight);
+		MusicStreamOffCommand partyMusicStreamOff = new MusicStreamOffCommand(partyMusic);
+		HotTubOffCommand hotTubOff = new HotTubOffCommand();
+			
+		// Remote
+		
 		remote.setCommand(0, livingRoomLightOn, livingRoomLightOff);
 		remote.setCommand(1, kitchenLightOn, kitchenLightOff);
 		remote.setCommand(2, garageOpen, garageClose);
