@@ -2,6 +2,10 @@ package client;
 
 import commands.*;
 
+/*
+ * The Invoker
+ */
+
 public class RemoteControl {
 	Command[] onCommands;
 	Command[] offCommands;
