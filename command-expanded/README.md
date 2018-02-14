@@ -18,7 +18,7 @@ This code also contains a two macro commands (Command[]s) that execute four diff
 
 The Remote classes(Client, RemoteControl) are decoupled from the vendor classes(Light, GarageDoor, etc).  This pattern follows the OPEN CLOSED PRINCIPLE.
 
-This pattern has a lot of small classes in it: the client, the invoker, the commands (on, off, turn, spinAtLowSpeed, whatever), and the objects(the receivers).
+This pattern has a lot of small classes in it: the client, the invoker, the commands (on, off, turn, spinAtLowSpeed, whatever), and the objects (the receivers).
 
 
 
