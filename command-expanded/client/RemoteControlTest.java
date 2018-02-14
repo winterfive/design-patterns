@@ -46,12 +46,13 @@ public class RemoteControlTest {
 		FonduePot myFondue = new FonduePot("Gruyere, Cheddar, and Emmentaler");
 		
 		LightOnCommand strobeLightOn = new LightOnCommand(strobeLight);
-		MusicStreamOnCommand partyMusicStreamOn = new MusicStreamOnCommand(partyMusic);
-		HotTubOnCommand hotTubOn = new HotTubOnCommand();
-		FonduePotOnCommand fonduePotOn = new FonduePotOnCommand();
 		LightOffCommand strobeLightOff = new LightOffCommand(strobeLight);
+		MusicStreamOnCommand partyMusicStreamOn = new MusicStreamOnCommand(partyMusic);
 		MusicStreamOffCommand partyMusicStreamOff = new MusicStreamOffCommand(partyMusic);
+		HotTubOnCommand hotTubOn = new HotTubOnCommand();
 		HotTubOffCommand hotTubOff = new HotTubOffCommand();
+		FonduePotOnCommand fonduePotOn = new FonduePotOnCommand();
+		FonduePotOffCommand fonduePotOff = new FonduePotOffCommand();		
 			
 		// Remote
 		
