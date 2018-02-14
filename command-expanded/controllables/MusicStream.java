@@ -11,5 +11,9 @@ public class MusicStream {
 		System.out.println("The music is really good. Turn it up!");
 		
 	}
+	
+	public void Off() {
+		System.out.println("The music is off.");
+	}
 
 }
