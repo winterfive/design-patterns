@@ -2,7 +2,8 @@
 
 In this expanded Command pattern, we have a lot more command classes with more functionality(undo(), various speeds verses just off and on, and a macro command[]).
 
-Client -> remoteControl -> <interface>Command -> LightOnCommand -> Light instance
+Client -> remoteControl -> <interface>Command -> LightOnCommand -> Light instance  
+  
 Client -> setCommand/onButtonWasPushed() -> execute() -> execute() { lightOn(); }
 
 I changed the code from the book to allow the Light class, the LightOnCommand class, and the LightOffCommand class to work for any light in the house or garage instead of having special garage light command classes.
