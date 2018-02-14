@@ -42,17 +42,17 @@ public class RemoteControlTest {
 		
 		Light strobeLight = new Light("party room");
 		MusicStream partyMusic = new MusicStream();
-		HotTub myHotTub = new HotTub();
-		FonduePot myFondue = new FonduePot("Gruyere, Cheddar, and Emmentaler");
+		HotTub hotTub = new HotTub();
+		FonduePot fonduePot = new FonduePot("Gruyere, Cheddar, and Emmentaler");
 		
 		LightOnCommand strobeLightOn = new LightOnCommand(strobeLight);
 		LightOffCommand strobeLightOff = new LightOffCommand(strobeLight);
 		MusicStreamOnCommand partyMusicStreamOn = new MusicStreamOnCommand(partyMusic);
 		MusicStreamOffCommand partyMusicStreamOff = new MusicStreamOffCommand(partyMusic);
-		HotTubOnCommand hotTubOn = new HotTubOnCommand();
-		HotTubOffCommand hotTubOff = new HotTubOffCommand();
-		FonduePotOnCommand fonduePotOn = new FonduePotOnCommand();
-		FonduePotOffCommand fonduePotOff = new FonduePotOffCommand();
+		HotTubOnCommand hotTubOn = new HotTubOnCommand(hotTub);
+		HotTubOffCommand hotTubOff = new HotTubOffCommand(hotTub);
+		FonduePotOnCommand fonduePotOn = new FonduePotOnCommand(fonduePot);
+		FonduePotOffCommand fonduePotOff = new FonduePotOffCommand(fonduePot);
 		
 		Command[] partyOn = { strobeLightOn, partyMusicStreamOn, fonduePotOn, hotTubOn };
 		Command[] partyOff = { strobeLightOff, partyMusicStreamOff, fonduePotOff, hotTubOff };
@@ -93,9 +93,9 @@ public class RemoteControlTest {
 		remote.offButtonWasPushed(6);
 		remote.undoButtonWasPushed();	// Turns kitchen fan back on at low speed
 		remote.onButtonWasPushed(7);
-		System.out.println("Turn the party on!\n");
+		System.out.println("\nTurn the party on!");
 		remote.onButtonWasPushed(8);
-		System.out.println("Partys over.");
+		System.out.println("\nClosing time...you don't have to go home but you can't stay here.");
 		remote.offButtonWasPushed(8);
 	}
 }
