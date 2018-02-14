@@ -15,6 +15,7 @@ public class MusicStreamOnCommand implements Command{
 		
 	}
 	
-	public void undo() {	}
-
+	public void undo() {
+		ms.Off();
+	}
 }

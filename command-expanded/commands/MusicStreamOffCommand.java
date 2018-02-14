@@ -13,10 +13,7 @@ public class MusicStreamOffCommand implements Command{
 		System.out.println("The music is off.");
 	}
 
-	@Override
 	public void undo() {
-		// TODO Auto-generated method stub
-		
+		ms.On();		
 	}
-
 }

@@ -3,17 +3,19 @@ package commands;
 import controllables.HotTub;
 
 public class HotTubOnCommand implements Command{
-	HotTub hottub;	
+	HotTub ht;	
 
 	public HotTubOnCommand(HotTub ht) {
-		this.hottub = ht;
+		this.ht = ht;
 	}
 
 	public void execute() {
-		hottub.on();		
+		ht.on();		
 	}
 
-	public void undo() {	}
+	public void undo() {
+		ht.off();
+	}
 	
 
 }

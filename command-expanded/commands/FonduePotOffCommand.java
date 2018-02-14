@@ -13,7 +13,7 @@ public class FonduePotOffCommand implements Command {
 		fp.off();
 		
 	}
-	public void undo() {}
-	
-
+	public void undo() {
+		fp.on();
+	}
 }

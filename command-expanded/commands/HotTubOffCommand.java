@@ -13,5 +13,7 @@ public class HotTubOffCommand implements Command{
 		ht.off();		
 	}
 
-	public void undo() {}
+	public void undo() {
+		ht.on();
+	}
 }
