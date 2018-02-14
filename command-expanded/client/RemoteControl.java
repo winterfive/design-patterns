@@ -10,7 +10,7 @@ public class RemoteControl {
 	public RemoteControl() {
 		// Magic numbers... 
 		onCommands = new Command[9];
-		offCommands = new Command[9];
+		offCommands = new Command[9]; 
 		
 		Command noCommand = new NoCommand();
 		for(int i = 0; i < 9; i++) {
