@@ -97,5 +97,7 @@ public class RemoteControlTest {
 		remote.onButtonWasPushed(8);
 		System.out.println("\nClosing time...you don't have to go home but you can't stay here.");
 		remote.offButtonWasPushed(8);
+		System.out.println("\nHold up, the party is not over!");
+		remote.undoButtonWasPushed();
 	}
 }
