@@ -52,7 +52,13 @@ public class RemoteControlTest {
 		HotTubOnCommand hotTubOn = new HotTubOnCommand();
 		HotTubOffCommand hotTubOff = new HotTubOffCommand();
 		FonduePotOnCommand fonduePotOn = new FonduePotOnCommand();
-		FonduePotOffCommand fonduePotOff = new FonduePotOffCommand();		
+		FonduePotOffCommand fonduePotOff = new FonduePotOffCommand();
+		
+		Command[] partyOn = { strobeLightOn, partyMusicStreamOn, fonduePotOn, hotTubOn };
+		Command[] partyOff = { strobeLightOff, partyMusicStreamOff, fonduePotOff, hotTubOff };
+		
+		MacroCommand partyOnMacro = new MacroCommand(partyOn);
+		MacroCommand partyOffMacro = new MacroCommand(partyOff);
 			
 		// Remote
 		
@@ -64,6 +70,7 @@ public class RemoteControlTest {
 		remote.setCommand(5, bedroomFanHigh, bedroomFanOff);
 		remote.setCommand(6, kitchenFanLow, kitchenFanOff);
 		remote.setCommand(7, musicOn, musicOff);
+		remote.setCommand(8, partyOnMacro, partyOffMacro);
 		// Remaining slots have noCommand via RemoteControl() constructor
 		
 		System.out.println(remote);
@@ -86,5 +93,9 @@ public class RemoteControlTest {
 		remote.offButtonWasPushed(6);
 		remote.undoButtonWasPushed();	// Turns kitchen fan back on at low speed
 		remote.onButtonWasPushed(7);
+		System.out.println("Turn the party on!\n");
+		remote.onButtonWasPushed(8);
+		System.out.println("Partys over.");
+		remote.offButtonWasPushed(8);
 	}
 }
