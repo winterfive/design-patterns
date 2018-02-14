@@ -1,6 +1,5 @@
-package client;
+package commands;
 
-import commands.Command;
 import controllables.HotTub;
 
 public class HotTubOnCommand implements Command{

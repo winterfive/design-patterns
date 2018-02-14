@@ -1,6 +1,5 @@
-package client;
+package commands;
 
-import commands.Command;
 import controllables.FonduePot;
 
 public class FonduePotOnCommand implements Command{
