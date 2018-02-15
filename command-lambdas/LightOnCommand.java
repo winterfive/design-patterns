@@ -1,6 +1,3 @@
-package commands;
-import controllables.Light;
-
 public class LightOnCommand implements Command {	
 	Light light;
 	

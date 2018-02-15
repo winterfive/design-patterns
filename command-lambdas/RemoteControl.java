@@ -1,7 +1,3 @@
-package client;
-
-import commands.*;
-
 /*
  * The Invoker
  */

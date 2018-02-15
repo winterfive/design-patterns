@@ -1,8 +1,3 @@
-package client;
-
-import commands.*;
-import controllables.*;
-
 public class RemoteControlTest {
 
 	public static void main(String[] args) {

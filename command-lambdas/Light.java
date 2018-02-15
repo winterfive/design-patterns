@@ -1,5 +1,3 @@
-package controllables;
-
 public class Light {
 	String location;
 
