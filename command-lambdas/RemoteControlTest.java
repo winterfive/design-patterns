@@ -9,17 +9,15 @@ public class RemoteControlTest {
 		
 		RemoteControl remote = new RemoteControl();
 		
-		Light livingRoomLight = new Light("living room");	
-		
-		Light kitchenLight = new Light("kitchen");	
-		
+		Light livingRoomLight = new Light("living room");
+		Light kitchenLight = new Light("kitchen");		
 		Light gLight = new Light("garage");
 			
 		// Remote
 		
-		remote.setCommand(0, livingRoomLightOn, livingRoomLightOff);
-		remote.setCommand(1, kitchenLightOn, kitchenLightOff);
-		remote.setCommand(2, garageLightOn, garageLightOff);
+		remote.setCommand(0, () -> { livingRoomLightOn(); }, () -> { livingRoomLightOff(); });
+		remote.setCommand(1, () -> { kitchenLightOn();, () -> { kitchenLightOff(); });
+		remote.setCommand(2, () -> { garageLightOn();, () -> { garageLightOff(); });
 		// Remaining slots have noCommand via RemoteControl() constructor
 		
 		System.out.println(remote);
