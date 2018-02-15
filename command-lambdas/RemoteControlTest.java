@@ -13,6 +13,7 @@ public class RemoteControlTest {
 		remote.setCommand(0, () -> { livingRoomLight.on(); }, () -> { livingRoomLight.off(); });
 		remote.setCommand(1, () -> { kitchenLight.on(); }, () -> { kitchenLight.off(); });
 		remote.setCommand(2, () -> { garageLight.on(); }, () -> { garageLight.off(); });
+		remote.setCommand(3, livingRoomLight::on,  livingRoomLight::off); 	// method references
 		// Remaining slots have noCommand via RemoteControl() constructor
 		
 		System.out.println(remote);
@@ -24,5 +25,7 @@ public class RemoteControlTest {
 		remote.offButtonWasPushed(1);
 		remote.onButtonWasPushed(2);
 		remote.offButtonWasPushed(2);
+		remote.onButtonWasPushed(3);
+		remote.offButtonWasPushed(3);
 	}
 }
