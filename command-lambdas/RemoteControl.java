@@ -1,9 +1,3 @@
-
-
-/*
- * The Invoker
- */
-
 public class RemoteControl {
 	Command[] onCommands;
 	Command[] offCommands;
@@ -11,9 +5,8 @@ public class RemoteControl {
 	public RemoteControl() {
 		// Magic numbers... 
 		onCommands = new Command[9];
-		offCommands = new Command[9]; 
+		offCommands = new Command[9];
 		
-		Command noCommand = new NoCommand();
 		for(int i = 0; i < 9; i++) {
 			// by default each slot on the remote will have 
 			// a noCommand lambda
