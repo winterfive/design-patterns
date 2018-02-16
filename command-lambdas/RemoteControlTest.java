@@ -26,7 +26,6 @@ public class RemoteControlTest {
 		
 		remote.onButtonWasPushed(0);
 		remote.offButtonWasPushed(0);
-		// remote.undoButtonWasPushed();	// Turns light back on
 		remote.onButtonWasPushed(1);
 		remote.offButtonWasPushed(1);
 		remote.onButtonWasPushed(2);
