@@ -7,7 +7,6 @@
 public class RemoteControl {
 	Command[] onCommands;
 	Command[] offCommands;
-	Command undoCommand;
 	
 	public RemoteControl() {
 		// Magic numbers... 
@@ -16,13 +15,11 @@ public class RemoteControl {
 		
 		Command noCommand = new NoCommand();
 		for(int i = 0; i < 9; i++) {
-			// by default each slot on the remote will have noCommand
-			onCommands[i] = noCommand;
-			offCommands[i] = noCommand;
+			// by default each slot on the remote will have 
+			// a noCommand lambda
+			onCommands[i] = () -> {};
+			offCommands[i] = () -> {};
 		}
-		
-		// noCommand by default
-		undoCommand = noCommand;
 	}
 	
 	public void setCommand(int slot, Command onCommand, Command offCommand) {
@@ -32,12 +29,12 @@ public class RemoteControl {
 	
 	public void onButtonWasPushed(int slot) {
 		onCommands[slot].execute();
-		undoCommand = onCommands[slot];
+		// undoCommand = onCommands[slot];
 	}
 	
 	public void offButtonWasPushed(int slot) {
 		offCommands[slot].execute();
-		undoCommand = offCommands[slot];
+		// undoCommand = offCommands[slot];
 	}
 	
 //	public void undoButtonWasPushed() {
