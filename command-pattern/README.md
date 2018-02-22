@@ -1,4 +1,7 @@
-## Command Pattern  
+## Command Pattern
+
+Use the command pattern when you need to decouple an object that makes requests from an
+object that knows how to perform the requests.
 
 This pattern encapsulates a request as an object.  The request (such as close()), the invoker
 (a garage remote control), and the item the request acts on (the garage door) are all separate objects.
@@ -13,7 +16,6 @@ For this example, I have three types of classes: my clients classes, my command 
 ### This command class turns off a light.
 
     public class LightOffCommand implements Command{
-
       Light light;
 
       public LightOffCommand(Light light) {
