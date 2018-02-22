@@ -13,3 +13,5 @@ Object: Using interfaces means an object can use as many interfaces as it wants.
 
 Class:  In Java, a class can only have one parent class.  The class adapter needs to use
 	multiple inheritance so you can't do this in Java.
+	
+![Adapter UML for Classes](https://user-images.githubusercontent.com/22779199/36567477-895ebc06-17f4-11e8-91d7-f39f4aa9ffcd.jpg)  
