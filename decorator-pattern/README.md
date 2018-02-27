@@ -5,8 +5,9 @@ a form of object composition.  This allows for expansion of code without subclas
 
 ![Latte with planet and galaxy design](https://user-images.githubusercontent.com/22779199/36761920-2ce063a4-1bef-11e8-927a-48c5acaa97ae.jpg)  
 
-Abstract Beverage -> Latte  
-                  -> Abstract Decorator -> Foam, Galaxy design, Extra milk, etc.
+Abstract Beverage   
+-> Latte  
+-> Abstract Decorator -> Foam, Galaxy design, Extra milk, etc.
 
 ![UML for Decorator Pattern](https://user-images.githubusercontent.com/22779199/35353631-be5e935e-0115-11e8-825f-354feece7f44.png)
 
