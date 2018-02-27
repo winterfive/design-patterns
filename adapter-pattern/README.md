@@ -3,6 +3,7 @@
 This pattern uses interfaces to allow an object or data or input to be treated like other another object, data, or input.
 
 If it walks like a cat and talks like a cat, it might be a pug using a cat adapter.
+![Black Cat and a Pug dressed as a Black Cat](https://user-images.githubusercontent.com/22779199/36753753-241d85f4-1bd5-11e8-9e7b-8e450be07a82.jpg)
   
 For example, you have legacy code that accepts a certain type of input.  A new customer also has data
 to input but the type is different.  Instead of rewriting your old code to accept the new data type,
