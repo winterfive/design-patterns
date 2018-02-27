@@ -1,7 +1,7 @@
 
 public interface Enumeration {
 	
-	void hasMoreElements();
+	boolean hasMoreElements();
 	
 	void nextElement();
 }
