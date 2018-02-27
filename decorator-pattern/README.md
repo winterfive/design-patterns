@@ -1,7 +1,7 @@
 ## Decorator Pattern  
 
-The decorator pattern adds more responsibilities to an object dynamically (during runtime).  
-This allows for expansion of code without requiring several new classes to be created (subclassing).
+The decorator pattern can add more responsibilities to an object dynamically (during runtime) using
+a form of object composition.  This allows for expansion of code without subclassing.
 
 ![UML for Decorator Pattern](https://user-images.githubusercontent.com/22779199/35353631-be5e935e-0115-11e8-825f-354feece7f44.png)
 
