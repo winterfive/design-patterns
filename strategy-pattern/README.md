@@ -1,4 +1,4 @@
-Strategy Pattern
+## Strategy Pattern
 
 The Strategy Pattern encapsulates a group of algorithms to make them interchangable.  Encapsulation also allows for modifications to be made to either group of algorithms without requiring changes to the rest of the code. 
 
