@@ -6,6 +6,8 @@ The subject and its observers are loosely coupled: they can interact without hav
 The observers can choose to unsubscribe as an observer and later, resubscribe to be an observer once more... just like an
 email newsletter subscriber list or a weather update app.
 
+![Image of Universal's Ride Wait Time App](https://user-images.githubusercontent.com/22779199/36814967-37fb5786-1ca7-11e8-940f-e0c701b656f7.png)
+
 This example of the Observer pattern will update a guest at a theme park when the wait time for the Hulk Coaster changes.  It does not use Java's built-in support.
 
 ![UML for Observer Pattern](https://user-images.githubusercontent.com/22779199/35053709-e2a9d28e-fb78-11e7-9952-60451e3ec22f.png)  
