@@ -3,8 +3,12 @@
 Use the command pattern when you need to decouple an object that makes requests from an
 object that knows how to perform the requests.
 
-This pattern encapsulates a request as an object.  The request (such as close()), the invoker
-(a garage remote control), and the item the request acts on (the garage door) are all separate objects.
+![A remote controlled garage door](https://user-images.githubusercontent.com/22779199/36812995-f42aa31e-1ca0-11e8-9a91-492ee527f679.jpg)
+
+This pattern encapsulates a request as an object.
+
+The request (such as close()), the invoker (a garage remote control), and the item the request acts on (the garage door) are all separate objects.  
+
 The invoker contains a method to act on any request (setCommand()).  This method is parameterized: it can accept any 
 request as an object (closeGarageDoor).  It sets or loads the invoker with a task.  Once loaded up, the request can be 
 completed by calling the invoker's method (such as ButtonWasPressed(), engage(), etc) to call the execute method (shared with all 
