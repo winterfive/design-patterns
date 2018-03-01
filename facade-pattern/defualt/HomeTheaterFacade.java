@@ -20,6 +20,21 @@ public class HomeTheaterFacade {
 		this.popper = popper;		
 	}
 	
+	public void netflixAndChill(String title) {
+		System.out.println("Get ready to watch some Netflix...");
+		popper.on();
+		sound.on();
+		sound.setVolume(7);
+		lights.off();
+		screen.down();
+		projector.on();		
+	}
 	
-
+	public void endWatching() {
+		popper.off();
+		sound.off();
+		lights.on();
+		projector.off();
+		screen.up();
+	}
 }
