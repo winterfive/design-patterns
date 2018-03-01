@@ -7,7 +7,7 @@ public class HomeTheater {
 	Screen screen;
 	PopcornPopper popper;
 	
-	void on(String movie, int volume) {
+	void turnOn(String movie, int volume) {
 		popper.on();
 		lights.off();
 		screen.down();
@@ -17,7 +17,7 @@ public class HomeTheater {
 		System.out.println("We're ready to watch " + movie + "!");
 	}
 	
-	void off() {
+	void turnOff() {
 		System.out.println("The movie is over.");
 		popper.off();
 		lights.on();
