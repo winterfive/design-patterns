@@ -1,9 +1,9 @@
 
 public interface Iterator {
 	
-	void hasNext();
+	boolean hasNext();
 	
-	void next();
+	Object next();
 	
 	void remove();
 }
