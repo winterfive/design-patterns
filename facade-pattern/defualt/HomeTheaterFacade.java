@@ -1,14 +1,29 @@
 package defualt;
 
-public class HomeTheaterFacade {
-	HomeTheater ht;
+public class HomeTheaterFacade {	
+	SoundSystem sound = new SoundSystem();
+	Projector projector = new Projector();
+	Lights lights = new Lights();
+	Screen screen = new Screen();
+	PopcornPopper popper = new PopcornPopper();
 	
-	void on(String movie, int volume) {
-		ht.turnOn(movie, volume);
+	void turnOn(String movie, int volume) {
+		popper.on();
+		lights.off();
+		screen.down();
+		sound.on();
+		sound.setVolume(volume);
+		projector.on();
+		System.out.println("We're ready to watch " + movie + "!\n");
 	}
 	
-	void off() {
-		ht.turnOff();
+	void turnOff() {
+		System.out.println("The movie is over.");
+		popper.off();
+		lights.on();
+		screen.up();
+		sound.off();
+		projector.off();
 	}	
 	
 }
