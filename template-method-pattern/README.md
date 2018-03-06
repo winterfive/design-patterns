@@ -13,7 +13,9 @@ The parent class with the algorithm (a final method).
 			boilWater();
 			brew();
 			pourInCup();
-			addCondiments();
+			if(customerWantsCondiments()) {
+				addCondiments();
+			}
 		}
 
 		public void boilWater() {
@@ -27,6 +29,11 @@ The parent class with the algorithm (a final method).
 		}
 
 		abstract void addCondiments();
+		
+		// a hook - a subclass can override, or not
+		boolean customerWantsCondiments() {
+			return true;
+		}
     }
     
 The child class
