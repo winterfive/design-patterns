@@ -5,6 +5,7 @@ Some of those methods are handled by the parent class and others by the child cl
 
 The parent class with the algorithm (a final method).
 
+
     public abstract class Beverage {
 	
 		// final - we don't want the subclasses to be able to change this
