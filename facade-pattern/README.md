@@ -6,7 +6,7 @@ This pattern creates a simple way to use the functionality of a complex subsyste
 
 For those who are scratching their heads, this is HAL from 2001 A Space Odyssey.  Watch it to know why I use HAL to represent the facade pattern.
 
-This pattern let's us avoid tight coupling between clients and subsystems.
+This pattern lets us avoid tight coupling between clients and subsystems.
 
 ## The Principle of Least Knowledge
 
