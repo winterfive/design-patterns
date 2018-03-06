@@ -17,7 +17,7 @@ The parent class with the algorithm (a final method).
 	
 	public void boilWater() {
 		System.out.println("Boiling water.");
-	  }
+	}
 	  
 	abstract void brew();
 	
