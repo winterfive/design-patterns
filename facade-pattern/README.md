@@ -6,7 +6,7 @@ This pattern creates a simple way to use the functionality of a complex subsyste
 
 For those who are scratching their heads, this is HAL from 2001 A Space Odyssey.  Watch it to know why I use HAL to represent the facade pattern.
 
-This pattern lets us avoid tight coupling between clients and subsystems.
+This pattern allowes us avoid tight coupling between clients and subsystems.
 
 ![UML for Facade pattern](https://user-images.githubusercontent.com/22779199/36871280-c2a5e450-1d6f-11e8-9d1d-f8acd4764e42.jpg)
 
