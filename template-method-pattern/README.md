@@ -14,30 +14,30 @@ The parent class with the algorithm (a final method).
 		pourInCup();
 		addCondiments();
 	}
-
-	abstract void addCondiments();
-
+	
+	public void boilWater() {
+		System.out.println("Boiling water.");
+	  }
+	  
 	abstract void brew();
-
+	
 	public void pourInCup() {
 		System.out.println("Pouring into cup.");
 	}
 
-	public void boilWater() {
-		System.out.println("Boiling water.");
-	  }
+	abstract void addCondiments();
     }
     
 The child class
 
     public class Tea extends Beverage{
 
+	void brew() {
+		System.out.println("Steeping teabag.");		
+	}
+	  
 	void addCondiments() {
 		System.out.println("Adding lemon.");
 	}
-
-	void brew() {
-		System.out.println("Steeping teabag.");		
-	  }
     }
 
