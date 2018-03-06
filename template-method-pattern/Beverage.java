@@ -6,7 +6,15 @@ public abstract class Beverage {
 		boilWater();
 		brew();
 		pourInCup();
-		addCondiments();
+		if(customerWantsCondiments()) {
+			addCondiments();
+		}
+				
+	}
+
+	// this is a hook, a subclass can override this
+	boolean customerWantsCondiments() {
+		return true;
 	}
 
 	abstract void addCondiments();
