@@ -7,37 +7,37 @@ The parent class with the algorithm (a final method).
 
     public abstract class Beverage {
 	
-	// final - we don't want the subclasses to be able to change this
-	final void prepareRecipe() {
-		boilWater();
-		brew();
-		pourInCup();
-		addCondiments();
-	}
-	
-	public void boilWater() {
-		System.out.println("Boiling water.");
-	}
-	  
-	abstract void brew();
-	
-	public void pourInCup() {
-		System.out.println("Pouring into cup.");
-	}
+		// final - we don't want the subclasses to be able to change this
+		final void prepareRecipe() {
+			boilWater();
+			brew();
+			pourInCup();
+			addCondiments();
+		}
 
-	abstract void addCondiments();
+		public void boilWater() {
+			System.out.println("Boiling water.");
+		}
+
+		abstract void brew();
+
+		public void pourInCup() {
+			System.out.println("Pouring into cup.");
+		}
+
+		abstract void addCondiments();
     }
     
 The child class
 
-    public class Tea extends Beverage{
+	public class Tea extends Beverage{
 
-	void brew() {
-		System.out.println("Steeping teabag.");		
+		void brew() {
+			System.out.println("Steeping teabag.");		
+		}
+
+		void addCondiments() {
+			System.out.println("Adding lemon.");
+		}
 	}
-	  
-	void addCondiments() {
-		System.out.println("Adding lemon.");
-	}
-    }
 
