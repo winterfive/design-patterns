@@ -8,6 +8,8 @@ For those who are scratching their heads, this is HAL from 2001 A Space Odyssey.
 
 This pattern lets us avoid tight coupling between clients and subsystems.
 
+![UML for Facade pattern](https://user-images.githubusercontent.com/22779199/36871280-c2a5e450-1d6f-11e8-9d1d-f8acd4764e42.jpg)
+
 ## The Principle of Least Knowledge
 
 Classes and objects should only talk to their immediate friends. When you build in a lot of dependencies, the system becomes difficult to maintain and expand.  
