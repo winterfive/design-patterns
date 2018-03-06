@@ -1,16 +1,23 @@
 
 public abstract class Beverage {
 	
-	void prepareRecipe() {
+	// final - we don't want the subclasses to be able to change this
+	final void prepareRecipe() {
 		boilWater();
+		brew();
 		pourInCup();
+		addCondiments();
 	}
 
-	private void pourInCup() {
+	abstract void addCondiments();
+
+	abstract void brew();
+
+	public void pourInCup() {
 		System.out.println("Pouring into cup.");
 	}
 
-	private void boilWater() {
+	public void boilWater() {
 		System.out.println("Boiling water.");
 	}
 
