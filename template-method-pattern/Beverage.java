@@ -6,8 +6,12 @@ public abstract class Beverage {
 		pourInCup();
 	}
 
-	private void pourInCup() {}
+	private void pourInCup() {
+		System.out.println("Pouring into cup.");
+	}
 
-	private void boilWater() {}
+	private void boilWater() {
+		System.out.println("Boiling water.");
+	}
 
 }
