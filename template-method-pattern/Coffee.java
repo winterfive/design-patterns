@@ -9,19 +9,19 @@ public class Coffee {
 	}
 
 	private void addSugarAndMilk() {
-		System.out.println("Boiling water.");
+		System.out.println("Adding sugar and milk.");
 	}
 
 	private void pourInCup() {
-		System.out.println("Coffee dripping through filter");
-	}
-
-	private void brewCoffeeGrinds() {
 		System.out.println("Pouring into cup.");
 	}
 
+	private void brewCoffeeGrinds() {
+		System.out.println("Coffee dripping through filter");
+	}
+
 	private void boilWater() {
-		System.out.println("Adding sugar and milk.");
+		System.out.println("Boiling water.");
 	}
 
 
