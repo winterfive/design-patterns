@@ -11,22 +11,23 @@ public abstract class Beverage {
 		}
 				
 	}
+	
+	public void boilWater() {
+		System.out.println("Boiling water.");
+	}
+	
+	abstract void brew();
+	
+	public void pourInCup() {
+		System.out.println("Pouring into cup.");
+	}
 
 	// this is a hook, a subclass can override this
 	boolean customerWantsCondiments() {
 		return true;
 	}
 
+	// this is a hook
 	abstract void addCondiments();
-
-	abstract void brew();
-
-	public void pourInCup() {
-		System.out.println("Pouring into cup.");
-	}
-
-	public void boilWater() {
-		System.out.println("Boiling water.");
-	}
 
 }
