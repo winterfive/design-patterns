@@ -34,7 +34,7 @@ The parent class with the algorithm (a final method).
 
 		abstract void addCondiments();
 		
-		// a hook - a subclass can override, or not
+		// a HOOK - a subclass can override, or not
 		boolean customerWantsCondiments() {
 			return true;
 		}
@@ -52,4 +52,7 @@ The child class
 			System.out.println("Adding lemon.");
 		}
 	}
+	
+A parent class can use an abstract method (no implementation, must be used by the child class) 
+or a hook (a method with an empty implementation that can be ignored or changed by the child class).
 
