@@ -5,7 +5,7 @@ import java.io.InputStreamReader;
 public class Coffee extends Beverage {
 
 	void addCondiments() {
-		System.out.println("Add sugar and milk.");
+		System.out.println("Adding sugar.");
 	}
 
 	void brew() {
@@ -27,7 +27,7 @@ public class Coffee extends Beverage {
 		
 		String answer = null;
 		
-		System.out.println("Would you like milk or sugar in your coffee? (y/n)");
+		System.out.println("Would you like sugar in your coffee? (y/n)");
 		
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		try {
