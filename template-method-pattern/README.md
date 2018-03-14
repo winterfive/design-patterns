@@ -3,7 +3,7 @@
 The template method pattern lets you create a template for an algorithm in which each step is a method.
 Some of those methods are handled by the parent class and others by the child class (these should be labeled abstract).
 
-Like a recipe with several steps but some are optional (adding walnuts).
+Like a recipe with several steps but some are optional (adding walnuts or pecans or no nuts at all).
 
 ![Cookie recipe with optional walnuts or pecans](https://user-images.githubusercontent.com/22779199/37430436-7c50bb9a-27a8-11e8-829a-d85af8d4ebf7.jpg)  
 
