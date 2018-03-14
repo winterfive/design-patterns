@@ -22,12 +22,11 @@ public abstract class Beverage {
 		System.out.println("Pouring into cup.");
 	}
 
-	// this is a hook, a subclass can override this
+	// this is a hook, a subclass can override this if it wants to
 	boolean customerWantsCondiments() {
 		return true;
 	}
 
-	// this is a hook
 	abstract void addCondiments();
 
 }
