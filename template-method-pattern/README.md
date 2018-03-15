@@ -3,6 +3,10 @@
 The template method pattern lets you create a template for an algorithm in which each step is a method.
 Some of those methods are handled by the parent class and others by the child class (these should be labeled abstract).
 
+Like a recipe with several steps but some are optional (adding walnuts or pecans or no nuts at all).
+
+![Cookie recipe with optional walnuts or pecans](https://user-images.githubusercontent.com/22779199/37430436-7c50bb9a-27a8-11e8-829a-d85af8d4ebf7.jpg)  
+
 The parent class with the algorithm (a final method).
 
 
@@ -30,7 +34,7 @@ The parent class with the algorithm (a final method).
 
 		abstract void addCondiments();
 		
-		// a hook - a subclass can override, or not
+		// a HOOK - a subclass can override, or not
 		boolean customerWantsCondiments() {
 			return true;
 		}
@@ -48,4 +52,7 @@ The child class
 			System.out.println("Adding lemon.");
 		}
 	}
+	
+A parent class can use an abstract method (no implementation, must be used by the child class) 
+or a hook (a method with an empty implementation that can be ignored or changed by the child class).
 
