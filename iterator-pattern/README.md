@@ -9,7 +9,7 @@ We use one interface to access and use data from different collections.  This ke
 Each collection will create it's own iterator using the iterator interface.  This "abstracts away" the knowledge of how to access
 each individual collection type.
 
-ArrayList -> ArrayList Iterator created using Iterator Interface
-Array -> ArrayIterator created using Iterator Interface
-HashMap -> HashMap Iterator created using Iterator Interface
+ArrayList -> ArrayList Iterator created using Iterator Interface  
+Array -> ArrayIterator created using Iterator Interface  
+HashMap -> HashMap Iterator created using Iterator Interface  
 
