@@ -6,7 +6,7 @@ Each concrete collection will have a createIterator() to create it's own iterato
 
 ![Basic Iterator UML](https://user-images.githubusercontent.com/22779199/37984281-df1f8f56-31c3-11e8-8575-4171a32960c7.png)  
 
-The UML below shows the code in this folder.  We've got two menus that are very similar(they both use createIterator() and addItem()).  Thw waitress class currently has to deal with each menu seperately(breaking the "Do not depend on concrete classes" rule). Since they share methods, I will create an interface to deal with that, removing some responsibility from the waitress.  I'll do that in the built-in implementation of Iterator.
+The UML below shows the code in this folder.  We've got two menus that are very similar(they both use createIterator() and addItem()).  The waitress class currently has to deal with each menu seperately(breaking the "Do not depend on concrete classes" rule). Since they share methods, I will create an interface to deal with that, removing some responsibility from the waitress.  I'll do that in the built-in implementation of Iterator.
 
 ![Waitress and Menu Iterator diagraphm](https://user-images.githubusercontent.com/22779199/37985327-78bd56c8-31c6-11e8-8f6b-9e99d22f3e3e.jpg) 
 
