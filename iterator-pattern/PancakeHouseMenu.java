@@ -33,7 +33,7 @@ public class PancakeHouseMenu {
 	}
 	
 	public Iterator createIterator() {
-		return new PancakeHouseMenuIterator();
+		return new PancakeHouseMenuIterator(menuItems);
 	}
 
 }
