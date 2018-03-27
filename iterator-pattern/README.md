@@ -6,10 +6,5 @@ We use one interface to access and use data from different collections.  This ke
 
 ![Basic Iterator UML](https://user-images.githubusercontent.com/22779199/37984281-df1f8f56-31c3-11e8-8575-4171a32960c7.png)  
 
-Each collection will create it's own iterator using the iterator interface.  This "abstracts away" the knowledge of how to access
-each individual collection type.
-
-ArrayList -> ArrayList Iterator created using Iterator Interface  
-Array -> ArrayIterator created using Iterator Interface  
-HashMap -> HashMap Iterator created using Iterator Interface  
+![Waitress and Menu Iterator diagraphm](https://user-images.githubusercontent.com/22779199/37985327-78bd56c8-31c6-11e8-8f6b-9e99d22f3e3e.jpg) 
 
