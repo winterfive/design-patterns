@@ -10,7 +10,9 @@ This pattern creates uses Java's built in Iterator to give us access to differen
 
 Unlike the non-built in version, our various menues implement the Menu interface.  Our instance of Waitress can refer
 to each menu object usng the interface rater then the concrete class.  This reduces the waitress's dependancy
-on concreate classes and allows me to code to an interface, not in implementaton (keeping things loosely coupled).  
+on concreate classes and allows me to code to an interface, not in implementaton (keeping things loosely coupled).
+
+![Built in Iterator UML](https://user-images.githubusercontent.com/22779199/38280758-cbdca27e-3742-11e8-94cc-6db8e9185b98.jpg)
 
 The Menu interface has the createIterator().  Menu is implemented by DinerMenu and PancakeHouseMenu so each 
 concrete menu class is responsible for creating it's own iterator that handles it's menu items.
