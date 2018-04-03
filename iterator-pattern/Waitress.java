@@ -1,3 +1,4 @@
+import files.DinerMenu;
 
 public class Waitress {
 	PancakeHouseMenu phMenu;
@@ -10,7 +11,7 @@ public class Waitress {
 	
 	public void printMenu() {
 		Iterator phIterator = phMenu.createIterator();
-		Iterator dIterator = dMenu.createIterator();
+		Iterator dIterator = (Iterator) dMenu.createIterator();
 		
 		System.out.println("MENU\n----\nBREAKFAST");
 		printMenu(phIterator);
