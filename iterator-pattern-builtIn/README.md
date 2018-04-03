@@ -3,6 +3,8 @@
 This pattern creates uses Java's built in Iterator to give us access to different types of collections 
 (Arrays, ArrayLists, HashMaps, Lists, etc).
 
+![Three different collections: butterflies, stamps, and condiment packets](https://user-images.githubusercontent.com/22779199/38280702-892fe9c2-3742-11e8-9606-0904a6f3db3d.jpg)
+
 - It provides a way to access elements of a collection sequentially w/out exposing the underlying representation.
 - The resposibility of traversal is placed on the iterator object, not the aggregate (the collection).
 
