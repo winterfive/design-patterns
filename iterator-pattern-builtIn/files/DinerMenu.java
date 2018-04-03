@@ -1,5 +1,7 @@
 package files;
 
+import java.util.Iterator;
+
 public class DinerMenu {
 	static final int MAX_ITEMS = 6;
 	int numberOfItems = 0;
@@ -40,7 +42,7 @@ public class DinerMenu {
 		}
 	}
 	
-	public Iterator createIterator() {
+	public DinerMenuIterator createIterator() {
 		return new DinerMenuIterator(menuItems);
 	}
 }
