@@ -1,7 +1,4 @@
 package files;
-import DinerMenuIterator;
-import Iterator;
-import MenuItem;
 
 public class DinerMenu {
 	static final int MAX_ITEMS = 6;
