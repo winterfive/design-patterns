@@ -1,9 +1,15 @@
 ## Iterator Pattern using Java's built in Iterator
 
-This pattern creates an iterator interface to give us access to different types of collections 
+This pattern creates uses Java's built in Iterator to give us access to different types of collections 
 (Arrays, ArrayLists, HashMaps, Lists, etc).
 
-The client doesn't need to know what kind of collection it is to access it. 
-Each concrete collection will have a createIterator() to create it's own iterator. 
-That Iterator instance knows the details of how to interact with it's own collection... 
-so the interaction is encapsulated!
+- It provides a way to access elements of a collection sequentially w/out exposing the underlying representation.
+- The resposibility of traversal is placed on teh iterator object, not the aggregate (the collection).
+
+Unlike the non-built in version, our various menues implement the Menu interface.  Our instance of Waitress can refer
+to each menu object usng the interface rater then the concrete class.  This reduces the waitress's dependancy
+on concreate classes and allows me to code to an interface, not in implementaton.  
+
+The Menu interface has the createIterator().  Menu is implemented by DinerMenu and PancakeHouseMenu so each 
+concrete menu class is responsible for creating it's own iterator that handles it's menu items.
+
